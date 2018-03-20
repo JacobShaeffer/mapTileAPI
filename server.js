@@ -1,3 +1,5 @@
+'use strict';
+
 //import external resources
 const express = require('express');
 const bodyParser = require('body-parser');
