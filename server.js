@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 //import external resources
@@ -18,7 +19,7 @@ app.get('/tileSet/:zoom/:y/:x', function(req, res){
     let y = req.params.y;
     let x = req.params.x;
     let resFile = `/server/tileSet/${zoom}/${y}_${x}.png`;
-    console.log(__dirname + resFile);
+    //console.log(__dirname + resFile);
     if(fs.existsSync(__dirname + resFile)){
         res.sendFile(__dirname + resFile);
     }
